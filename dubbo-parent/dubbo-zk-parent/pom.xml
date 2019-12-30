@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dubbo-parent</artifactId>
+        <groupId>com.meteor.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dubbo-zk-parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dubbo-zk-provider</module>
+        <module>dubbo-zk-consumer</module>
+    </modules>
+
+
+    <dependencies>
+
+        <!--dubbo的API依赖-->
+        <dependency>
+            <groupId>com.meteor.demo</groupId>
+            <artifactId>dubbo-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Dubbo -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+
+
+
+        <!--spring context的依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.0.9.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+         <!--这个是错误的 被网上误导了-->
+        <!--<dependency>-->
+            <!--<groupId>com.netflix.curator</groupId>-->
+            <!--<artifactId>curator-framework</artifactId>-->
+        <!--</dependency>-->
+        <!--这个才是策展人-->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
