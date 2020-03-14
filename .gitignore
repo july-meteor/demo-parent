@@ -19,6 +19,5 @@ target/
 .idea/
 .idea.DS_Store
 .cache
-.iml
 *.pyc
 *.xlm

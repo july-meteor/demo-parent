@@ -11,6 +11,9 @@
     <modules>
         <module>dubbo-parent</module>
         <module>netty-parent</module>
+        <module>spring-parent</module>
+        <module>tool-parent</module>
+        <module>design-patterns</module>
     </modules>
 
 
