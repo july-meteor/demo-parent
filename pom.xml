@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>design-pattern-parent</module>
         <module>dubbo-parent</module>
         <module>netty-parent</module>
     </modules>
