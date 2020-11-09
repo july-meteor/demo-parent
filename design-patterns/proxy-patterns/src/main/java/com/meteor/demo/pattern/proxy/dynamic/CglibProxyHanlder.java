@@ -15,7 +15,6 @@ public class CglibProxyHanlder  implements MethodInterceptor {
     public Object intercept(Object object, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         String sortName = method.getName();
         long start = System.currentTimeMillis();
-//        System.out.println("本次" + sortName + "的执行时间为: " + (start) + "ms");
         //此处一定要使用proxy的invokeSuper方法来调用目标类的方法
         methodProxy.invokeSuper(object, objects);
         long end = System.currentTimeMillis();

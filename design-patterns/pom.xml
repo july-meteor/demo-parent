@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>proxy-patterns</module>
+        <module>builder-pattern</module>
+        <module>observer-pattern</module>
     </modules>
 
 

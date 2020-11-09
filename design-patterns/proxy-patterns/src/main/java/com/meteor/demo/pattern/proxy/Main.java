@@ -64,8 +64,6 @@ public class Main {
         enhancer.setCallback(hanlder);
         TestDao dao  = (TestDao) enhancer.create();
         dao.say("6666");
-
-
     }
 
 

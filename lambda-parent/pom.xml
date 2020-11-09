@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-parent</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-context</module>
-        <module>spring-security</module>
-    </modules>
-
+    <artifactId>lambda-parent</artifactId>
 
 
 </project>

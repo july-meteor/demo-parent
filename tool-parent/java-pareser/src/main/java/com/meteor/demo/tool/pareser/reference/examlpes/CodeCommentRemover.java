@@ -48,7 +48,7 @@ public class CodeCommentRemover {
         System.err.println(split);
         String t = "<!-- 什么情况啊  --> ssss<!-- 什么情况啊  --> aaaa";
 
-         split = REPLACE_HTML_JAVA2.matcher(t).replaceAll("");
+         split = REPLACE_HTML_COMMENT.matcher(t).replaceAll("");
         System.err.println(split);
     }
 
